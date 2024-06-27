@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Meal Finder</h1>
+        <p>Discover new meals every day and search for your favorite categories.</p>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search meal categories...">
+            <input type="submit" id="search-button" value="Search">
+        </div>
+    </div>
+    <div class="random-meal">
+        <h2>Random Meal</h2>
+        <div class="meal" id="random-meal"></div>
+        <div id="meal-instructions"></div>
+        <div id="meal-video"></div>
+    </div>
+    <div class="searched-meals" id="searched-meals">
+        <h2>Search Results</h2>
+        <div class="meals-container" id="meals-container"></div>
+    </div>
+    
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <ul id="modal-ingredients"></ul>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
